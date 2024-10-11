@@ -26,3 +26,21 @@ Du får inte rösta, Micke!
 Det blir ingen finlandsfärga, Micke!
 
 */
+
+let name = prompt("Hej, vad heter du?");
+let age = prompt("Ok " + name + ", hur gammal är du?");
+ 
+age = parseInt(age);
+
+if(age < 15){
+    alert("Du måste ha hjälm när du cyclar" + name + "!" );
+}
+if(age < 18){
+    alert("Du får inte rösta");
+} 
+if(age < 23){
+   alert("Det blir ingen finlandsfärga")
+}
+if(age >= 23){
+alert("Du är gammal nog att göra vad du vill");
+}

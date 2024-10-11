@@ -8,3 +8,16 @@ Om det är rätt, gör det här, annars gör det här
 Gör en flowchart och sedan skriva pseudokod innan ni börjar koda.
 
 */
+
+let userInput = prompt('Ange lösenord');
+const correctPassword = "1234";
+
+if(userInput === correctPassword){
+    console.log('vällkommen');
+} else {
+    console.log('inkräktare');  
+}
+
+
+
+ 
