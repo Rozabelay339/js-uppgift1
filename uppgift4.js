@@ -23,3 +23,36 @@ console.log(nummer);
 
 
 /* FORTSÄTT MED EGEN KOD HÄR */
+
+
+/*
+PSEUDOKOD
+1.Start the game.
+2.Generate a random number between 0 and 10.
+3.Ask the player for their first guess.
+4.If the guess is correct, congratulate the player and end the game.
+5.If the guess is wrong, tell the player whether the guess was too high or too low.
+6.Ask the player for a second guess.
+7.If the second guess is correct, congratulate the player.
+8.If the second guess is wrong, tell the player that the game is over and reveal the correct number.
+9.End the game. */
+
+let correctNumber = Math.round(Math.random() * 10);
+let guess1 = parseInt(prompt("Guess a number between 0 and 10"));
+if (guess1 === correctNumber) {
+    alert("Congratulations, you guessed the correct number and won!");
+} else {
+    if (guess1 > correctNumber) {
+        alert("Your guess is too high.");
+    } else {
+        alert("Your guess is too low.");
+    }
+    
+    let guess2 = parseInt(prompt("Try again! Enter your second guess:"));
+     if (guess2 === correctNumber) {
+        alert("Congratulations, you guessed the correct number and won!");
+    } else {
+        alert("Sorry, you lost! The correct number was" + correctNumber + ".");
+    }
+}
+
