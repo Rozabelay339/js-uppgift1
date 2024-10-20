@@ -54,9 +54,9 @@ else { alert("Please enter a valid shape") }
 
     If the user enters a shape that isn’t "circle", "triangle", or "rectangle", it prompts the user to enter a valid shape. */
 
-
+/*
 while (true){
-   let shape = prompt("enter a shape").toLowerCase 
+   let shape = prompt("enter a shape").toLowerCase() 
 
    if(shape == "circle"){
     let radius = prompt("enter radius of the circle");
@@ -71,7 +71,7 @@ while (true){
    break
    } else if (shape === "rectangle"){
     let height = prompt( "enter height of the rectangle")
-    let width = prompt ("enter eidth of the rectangle")
+    let width = prompt ("enter idth of the rectangle")
     let result = height * width
     alert("The area of the " + shape + "is" + result + ".")
     break
@@ -80,14 +80,43 @@ while (true){
    }
 
 }
+*/
 
 
 
+// Example 1: Calculate the Volume of a Sphere, Cylinder, or Cuboid
+
+/*while(true) {
+let shape = prompt("enter the shape").toLowerCase()
+if( shape === "sphare"){
+let radius = prompt("input the radius of the sphare");
+let result = prompt(4 / 3) * Math.PI * Math.pow(radius, 3);
+alert ("the volume of the" + shape + "is" + result + ".");
+break;
+}
+}
+*/
 
 
+//Example 2: Calculate the Perimeter of Circle, Triangle, or Rectangle
 
-
-
+while(true){
+    let shape = prompt("enter the shape").toLowerCase()
+    if(shape == "circle"){
+        let radius = prompt("enter the radius of the circle");
+        let result = 2 * Math.PI * radius;
+        alert("perimeter of the "+ shape + "is" + result);
+        break;
+    }
+    else if(shape == "triangle"){
+        let side1 = prompt("Enter the first side of the triangle");
+        let side2 = prompt("Enter the second side of the triangle");
+        let side3 = prompt("Enter the third side of the triangle");
+        let result = parseFloat(side1) + parseFloat(side2) + parseFloat(side3);
+        alert("perimeter of the "+ shape + "is" + result);
+        break;
+    }
+}
 
 
 
